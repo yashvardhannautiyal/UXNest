@@ -56,7 +56,7 @@ function Editor() {
           ></textarea>
         </div>
         {/* code output area  */}
-        <div id="right" className="w-full pb-12 pr-1">
+        <div id="right" className="w-full sm:pb-12 sm:pr-1 p-2">
           <label className="font-medium flex items-center pb-1">
             <FaDisplay /><span className="pl-1">Output</span>
           </label>
