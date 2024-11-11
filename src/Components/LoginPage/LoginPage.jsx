@@ -1,32 +1,24 @@
-import React from "react";
-import InputField from "./InputField";
+import React from "react"
 import SocialLogin from "./SocialLogin";
 
-const LoginPage = () => {
-  return (
-    <div className="flex justify-center items-center min-h-screen shadow-lg">
-    <div className=" bg-white border-2 border-gray-800 rounded-md p-6 w-96">
-      <h2 className="text-3xl font-bold text-center">Log in with</h2>
+const LoginPage = () =>{
+    return(
+        <>
+        <div className="text-white flex items-center justify-center min-h-screen pt-8">
+            <div className="text-center">
+            <p className="text-3xl font-bold">Sign in to </p>
+            <span className="text-7xl font-navLogo">
+            <span className="text-purple-700">UX</span>Nest
+          </span>
+            <p className="font-normal text-gray-400 text-lg">Login or register to start implementing your ideas into reality</p>
+            <SocialLogin />
+            </div>
+            
+            
+            
+        </div>
+        </>
+    )
+}
 
-      <SocialLogin />
-      <p className="text-center">
-        <span className="">OR</span>
-      </p>
-      <form action="#" className="text-center">
-        <InputField />
-        <a href="#" className="forget-pass-link underline text-purple-700">
-          Forgot Password?
-        </a>
-        <button className="border-2">Log In</button>
-      </form>
-      <p className="text-center">
-        Don't have an account?
-        <a href="#" className="underline text-purple-700">
-          Signup now
-        </a>
-      </p>
-    </div>
-    </div>
-  );
-};
 export default LoginPage;
