@@ -13,7 +13,7 @@ const HeroSection = () => {
             <p className="md:text-center">Build Better, Compile Faster.</p>
           </div>
         </div>
-        <div className="md:font-normal font-medium md:text-lg w-auto flex md:text-center pb-2 md:justify-center">
+        <div className="font-normal md:text-lg w-auto flex md:text-center pb-2 md:justify-center">
           <p className="p-3 md:w-2/3">
             UXNest is a powerful, intuitive code editor to revolutionize your
             development workflow with our front-end compiler. Fast, efficient,
@@ -57,7 +57,7 @@ const HeroSection = () => {
                 <h1 className="font-extrabold md:text-3xl text-lg lg:w-2/3">
                 Bring Your Vision to Life – Transform Ideas into Stunning Front-End Experiences!
                 </h1>
-                <p className="md:text-lg font-medium mt-2 ">Turn your ideas into beautiful, engaging front-end designs that captivate and connect with your audience. Bring your vision to life with stunning, user-friendly web experiences!</p>
+                <p className="sm:text-lg sm:font-medium mt-2 ">Turn your ideas into beautiful, engaging front-end designs that captivate and connect with your audience. Bring your vision to life with stunning, user-friendly web experiences!</p>
             </div>
           </div>
         </div>
