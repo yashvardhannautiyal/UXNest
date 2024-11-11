@@ -4,7 +4,7 @@ import SocialLogin from "./SocialLogin";
 const LoginPage = () =>{
     return(
         <>
-        <div className="text-white flex items-center justify-center min-h-screen pt-8">
+        <div className="text-white flex items-center justify-center min-h-screen sm:pt-2">
             <div className="text-center">
             <p className="text-3xl font-bold">Sign in to </p>
             <span className="text-7xl font-navLogo">
