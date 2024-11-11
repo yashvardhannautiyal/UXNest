@@ -33,31 +33,31 @@ const HeroSection = () => {
 
         {/* section 2 */}
         <div className="md:p-4 mt-10">
-          <p className="md:text-6xl text-4xl font-medium md:p-9 md:m-6 md:text-center p-3">
+          <p className="flex justify-center md:text-6xl text-3xl font-medium md:p-9 md:m-6 md:text-center p-3">
             Compile Like a Pro, Code Like a Boss.
           </p>
 
-          <div className="bg-black bg-opacity-35 rounded-lg flex items-center justify-center p-9">
-            <div className="flex p-4">
+          <div className="bg-black bg-opacity-35 rounded-lg md:flex items-center justify-center lg:p-9 p-3">
+            <div className="flex justify-center lg:p-4">
             {/* html-logo  */}
-            <div className="p-5">
-            <img src="../Assets/htmlLogo.png" alt="" className="h-24" />
+            <div className="lg:p-5 xs:p-3">
+            <img src="../Assets/htmlLogo.png" alt="" className="md:h-28 h-20" />
             </div>
             {/* css-logo  */}
-            <div className="p-5">
-            <img src="../Assets/cssLogo.png" alt="" className="h-24"/>
+            <div className="lg:p-5 xs:p-3">
+            <img src="../Assets/cssLogo.png" alt="" className="md:h-28 h-20"/>
             </div>
             {/* js-logo  */}
-            <div className="p-5">
-            <img src="../Assets/jsLogo.png" alt="" className="h-24"/>
+            <div className="lg:p-5 xs:p-3">
+            <img src="../Assets/jsLogo.png" alt="" className="md:h-28 h-20 p-1"/>
             </div>
             </div>
 
-            <div className="w-3/5">
-                <h1 className="font-extrabold text-3xl w-2/3">
+            <div className="md:w-3/5">
+                <h1 className="font-extrabold md:text-3xl text-lg lg:w-2/3">
                 Bring Your Vision to Life – Transform Ideas into Stunning Front-End Experiences!
                 </h1>
-                <p className="text-lg font-medium">Turn your ideas into beautiful, engaging front-end designs that captivate and connect with your audience. Bring your vision to life with stunning, user-friendly web experiences!</p>
+                <p className="md:text-lg font-medium mt-2 ">Turn your ideas into beautiful, engaging front-end designs that captivate and connect with your audience. Bring your vision to life with stunning, user-friendly web experiences!</p>
             </div>
           </div>
         </div>

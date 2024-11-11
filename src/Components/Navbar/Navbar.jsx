@@ -32,7 +32,7 @@ const Navbar = () => {
           </span>
         </a>
 
-        <div className="hidden lg:flex gap-12 font-medium">
+        <div className="hidden lg:flex gap-12 font-medium p-4">
           {/* home  */}
           <a
             href="#"
@@ -49,16 +49,16 @@ const Navbar = () => {
             onClick={handleLoginClick}
             style={{ cursor: "pointer" }}
           >
-            Log in
+            Sign in
           </a>
 
           {/* dark mode */}
-          <a
+          {/* <a
             href="#"
             className="font-normal text-white transition delay-2000 duration-300 hover:text-purple-200"
           >
             Darkmode
-          </a>
+          </a> */}
         </div>
 
         {/* menu : for screen smaller than medium */}
