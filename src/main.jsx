@@ -5,7 +5,7 @@ import '../index.css'
 
 import  {RouterProvider, createBrowserRouter } from "react-router-dom"
 import HeroSection from './Components/HeroSection/HeroSection.jsx';
-import LoginPage from './Components/LoginPage/LoginPage.jsx';
+// import LoginPage from './Components/LoginPage/LoginPage.jsx';
 import Editor from './Components/Editor/Editor.jsx';
 
 
@@ -18,10 +18,10 @@ const router = createBrowserRouter(
        { path : "/",
         element : <HeroSection />
        },
-       {
-        path : "/login",
-        element : <LoginPage />
-       },
+      //  {
+      //   path : "/login",
+      //   element : <LoginPage />
+      //  },
        {
         path : "/editor",
         element : <Editor />

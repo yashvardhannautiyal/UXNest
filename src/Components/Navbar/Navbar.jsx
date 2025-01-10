@@ -42,7 +42,7 @@ const Navbar = () => {
             Home
           </a>
 
-          {/* Log-in  */}
+          {/* Log-in 
           <a
             href="#"
             className="font-normal text-white transition delay-2000 duration-300 hover:text-purple-200"
@@ -50,7 +50,7 @@ const Navbar = () => {
             style={{ cursor: "pointer" }}
           >
             Sign in
-          </a>
+          </a> */}
 
           {/* dark mode */}
           {/* <a
