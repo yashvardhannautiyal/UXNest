@@ -77,6 +77,15 @@ function Editor() {
 
   return (
     <>
+     {/* Run Button */}
+     <div className="flex justify-center">
+     <button
+            onClick={runCode}
+            className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-5 rounded"
+          >
+            Run
+          </button>
+          </div>
       <div id="container" className="text-white min-h-screen sm:flex bg-gray-950">
         {/* Code input area */}
         <div id="left" className="p-2 basis-full w-full bg-gray-950">
@@ -113,13 +122,7 @@ function Editor() {
             className="w-full h-32 bg-gray-900 p-2"
           ></textarea>
 
-          {/* Run Button */}
-          <button
-            onClick={runCode}
-            className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded"
-          >
-            Run
-          </button>
+         
         </div>
 
         {/* Code output area */}
