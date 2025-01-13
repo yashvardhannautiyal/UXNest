@@ -41,15 +41,15 @@ const HeroSection = () => {
             <div className="flex justify-center lg:p-4">
             {/* html-logo  */}
             <div className="lg:p-5 xs:p-3">
-            <img src="../logo/htmlLogo.png" alt="htmlLogo" className="md:h-28 h-20" />
+            <img src="/logo/htmlLogo.png" alt="htmlLogo" className="md:h-28 h-20" />
             </div>
             {/* css-logo  */}
             <div className="lg:p-5 xs:p-3">
-            <img src="../logo/cssLogo.png" alt="cssLogo" className="md:h-28 h-20"/>
+            <img src="/logo/cssLogo.png" alt="cssLogo" className="md:h-28 h-20"/>
             </div>
             {/* js-logo  */}
             <div className="lg:p-5 xs:p-3">
-            <img src="../logo/jsLogo.png" alt="jsLogo" className="md:h-28 h-20 p-1"/>
+            <img src="/logo/jsLogo.png" alt="jsLogo" className="md:h-28 h-20 p-1"/>
             </div>
             </div>
 
