@@ -108,9 +108,9 @@ const Navbar = () => {
               {/* <button className="text-white bg-purple-700 rounded-md p-1 text-lg hover:bg-purple-500 mb-4 font-medium w-full transition delay-2000 duration-300">
                 Login
               </button> */}
-              <button className="text-white bg-purple-700 rounded-md p-1 text-lg hover:bg-purple-500 font-medium w-full transition delay-2000 duration-300" onClick={handleLoginClick}>
+              {/* <button className="text-white bg-purple-700 rounded-md p-1 text-lg hover:bg-purple-500 font-medium w-full transition delay-2000 duration-300" onClick={handleLoginClick}>
                 Sign-in
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

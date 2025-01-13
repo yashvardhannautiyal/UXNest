@@ -81,7 +81,7 @@ function Editor() {
      <div className="flex justify-center">
      <button
             onClick={runCode}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-5 rounded"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-medium sm:py-2 sm:px-5 px-2 py-1 rounded"
           >
             Run
           </button>
