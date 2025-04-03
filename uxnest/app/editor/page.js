@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import { FaHtml5, FaCss3Alt, FaSquareJs, FaDisplay } from "react-icons/fa6";
 

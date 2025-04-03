@@ -1,11 +1,9 @@
-import { useNavigate } from "react-router-dom";
-const HeroSection = () => {
-  const navigate = useNavigate();
-  const handleGetStartedBtn = () => {
-    navigate("/editor");
-  };
+import React from 'react'
+import Link from 'next/link'
+
+const page = () => {
   return (
-    <>
+    <div>
       {/* section 1 */}
       <div className="main-container text-purple-100">
         <div className="md:flex md:justify-center md:p-5 mt-5">
@@ -22,11 +20,12 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="flex md:justify-center md:pl-0">
+          
           <button
             className="bg-purple-600 text-white rounded-md m-3 p-2  font-medium lg:w-1/4 md:w-2/3 w-full hover:bg-purple-500 transition delay-2000 duration-300"
-            onClick={handleGetStartedBtn}
           >
-            Get Started
+            <Link href={"/editor"}>
+            Get Started</Link>
           </button>
         </div>
 
@@ -41,15 +40,15 @@ const HeroSection = () => {
             <div className="flex justify-center lg:p-4">
             {/* html-logo  */}
             <div className="lg:p-5 xs:p-3">
-            <img src="/logo/htmlLogo.png" alt="htmlLogo" className="md:h-28 h-20" />
+            <img src="./htmlLogo.png" alt="htmlLogo" className="md:h-28 h-20" />
             </div>
             {/* css-logo  */}
             <div className="lg:p-5 xs:p-3">
-            <img src="/logo/cssLogo.png" alt="cssLogo" className="md:h-28 h-20"/>
+            <img src="./cssLogo.png" alt="cssLogo" className="md:h-28 h-20"/>
             </div>
             {/* js-logo  */}
             <div className="lg:p-5 xs:p-3">
-            <img src="/logo/jsLogo.png" alt="jsLogo" className="md:h-28 h-20 p-1"/>
+            <img src="./jsLogo.png" alt="jsLogo" className="md:h-28 h-20 p-1"/>
             </div>
             </div>
 
@@ -66,7 +65,8 @@ const HeroSection = () => {
 
 
       </div>
-    </>
-  );
-};
-export default HeroSection;
+    </div>
+  )
+}
+
+export default page

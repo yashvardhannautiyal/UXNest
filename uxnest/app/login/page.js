@@ -1,5 +1,5 @@
 import React from "react"
-import SocialLogin from "./SocialLogin";
+import SocialLogin from "../Components/SocialLogin";
 
 const LoginPage = () =>{
     return(
