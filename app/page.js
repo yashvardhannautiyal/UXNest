@@ -21,7 +21,7 @@ export default function Home() {
         <div className="flex md:justify-center md:pl-0">
           
           <button
-            className="bg-purple-600 text-white rounded-md m-3 p-2  font-medium lg:w-1/4 md:w-2/3 w-full hover:bg-purple-500 transition delay-2000 duration-300"
+            className="bg-purple-600 text-white rounded-md m-3 p-2  font-medium lg:w-1/4 md:w-2/3 w-full hover:bg-purple-500 transition delay-2000 duration-300 hover:cursor-pointer"
           >
             <Link href={"/editor"}>
             Get Started</Link>
