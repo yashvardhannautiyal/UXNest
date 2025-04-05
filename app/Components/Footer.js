@@ -8,45 +8,40 @@ import { FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className=" px-4 md:px-16 lg:px-28 py-8 text-white">
-        <div>
-          <h1 className="font-bold font-navLogo text-4xl text-center">
-            <span className="text-purple-600">UX</span>Nest
-          </h1>
-        </div>
-        <div>
-          <div className="p-5 font-medium sm:text-2xl">
-            <ul className="flex space-x-4 justify-center text-center">
+      <footer className="px-4 md:px-16 lg:px-28 py-8 mt-10 text-white">
+       <div>
+          <div className="sm:text-2xl">
+            <ul className="flex space-x-2 justify-center text-center">
               <li>
-                <div className="border-2 border-white p-1 sm:m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <FaFacebook />
                 </div>
               </li>
               <li>
-                <div className="border-2 border-white p-1 sm:m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <GrLinkedinOption />
                 </div>
               </li>
               <li>
-                <div className="border-2 border-white p-1 sm:m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <FaXTwitter />
                 </div>
               </li>
               <li>
-                <div className="border-2 border-white p-1 sm:m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <FaInstagram />
                 </div>
               </li>
               <li>
-                <div className="border-2 border-white p-1 sm:m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <FaGithub />
                 </div>
               </li>
             </ul>
           </div>
-          <div className="flex justify-center">
-            <p className="pr-4 hover:underline hover:cursor-pointer">Terms of use</p>
-            <p className="pr-4 hover:underline hover:cursor-pointer">Privacy Policy</p>
+          <div className="flex justify-center space-x-4">
+            <p className="hover:underline hover:cursor-pointer">Terms of use</p>
+            <p className="hover:underline hover:cursor-pointer">Privacy Policy</p>
             <p className="hover:underline hover:cursor-pointer">Support</p>
           </div>
         </div>
