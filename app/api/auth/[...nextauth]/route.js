@@ -1,24 +1,27 @@
-import NextAuth from 'next-auth'
-// import AppleProvider from 'next-auth/providers/apple'
-import GoogleProvider from 'next-auth/providers/google'
-import GithubProvider from "next-auth/providers/github"
+// app/api/auth/[...nextauth]/route.js
+import NextAuth from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
+import GithubProvider from "next-auth/providers/github";
 
-export const authOptions =  NextAuth({
+const authOptions = {
   providers: [
-    // OAuth authentication providers...
     GithubProvider({
-        clientId: process.env.GITHUB_ID,
-        clientSecret: process.env.GITHUB_SECRET,
-      }),
-    // AppleProvider({
-    //   clientId: process.env.APPLE_ID,
-    //   clientSecret: process.env.APPLE_SECRET
-    // }),
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
+    }),
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_SECRET
-    })
-  ]
-})
+      clientSecret: process.env.GOOGLE_SECRET,
+    }),
+  ],
+  secret: process.env.NEXTAUTH_SECRET,
+  debug: true,
+};
 
-export {authOptions as GET, authOptions as POST}
+const handler = NextAuth(authOptions);
+
+export { handler as GET, handler as POST };
+
+
+
+

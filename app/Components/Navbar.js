@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
-import { useSession, signIn, signOut } from "next-auth/react"
 
 const menu = () => {
   const dialog = document.getElementById("dialog");
