@@ -1,7 +1,7 @@
 import "./globals.css";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import SessionWrapper from "./Components/SessionWrapper";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+import SessionWrapper from "./Components/SessionWrapper/SessionWrapper";
 export const metadata = {
   title: "UXNest - Code editor",
   description: "Html, Css, Js editor app",
@@ -10,13 +10,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body id="bg-gradient">
-        <SessionWrapper>
+      <SessionWrapper>
+      <body id="bg-gradient">        
         <Navbar />
         {children}
         <Footer />
-        </SessionWrapper>
       </body>
+      </SessionWrapper>
     </html>
   );
 }

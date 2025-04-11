@@ -27,7 +27,7 @@ const Navbar = () => {
           
           {/* Log-in  */}
           <Link
-            href="/login"
+            href={"/login"}
             className="font-normal text-white transition delay-2000 duration-300 hover:text-purple-200"
             style={{ cursor: "pointer" }}
             
@@ -81,7 +81,7 @@ const Navbar = () => {
             
             <div className="h-[1px] bg-gray-300 m-4"></div>
             <Link
-              href="/editor"
+              href={"/editor"}
               className="font-medium text-2xl m-3 p-8 transition delay-2000 duration-300 hover:text-gray-600" 
             >
               Get started

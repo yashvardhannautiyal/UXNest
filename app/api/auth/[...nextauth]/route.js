@@ -1,27 +1,26 @@
-// app/api/auth/[...nextauth]/route.js
-import NextAuth from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
-import GithubProvider from "next-auth/providers/github";
+import NextAuth from 'next-auth'
+import GoogleProvider from 'next-auth/providers/google'
+// import EmailProvider from 'next-auth/providers/email'
+import GithubProvider from "next-auth/providers/github"
 
-const authOptions = {
+const handler =  NextAuth({
   providers: [
-    GithubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
-    }),
-    GoogleProvider({
+    // OAuth authentication providers...
+        GoogleProvider({
       clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_SECRET,
+      clientSecret: process.env.GOOGLE_SECRET
     }),
-  ],
-  secret: process.env.NEXTAUTH_SECRET,
-  debug: true,
-};
+    // // Passwordless / email sign in
+    // EmailProvider({
+    //   server: process.env.MAIL_SERVER,
+    //   from: 'NextAuth.js <no-reply@example.com>'
+    // }),
 
-const handler = NextAuth(authOptions);
+    GithubProvider({
+        clientId: process.env.GITHUB_ID,
+        clientSecret: process.env.GITHUB_SECRET,
+      }),
+  ]
+})
 
-export { handler as GET, handler as POST };
-
-
-
-
+export {handler as GET, handler as POST}
