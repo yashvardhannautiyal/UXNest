@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import Footer from '../Components/Footer/Footer'
 
 const page = () => {
   return (
@@ -66,7 +65,6 @@ const page = () => {
 
 
       </div>
-      <Footer />
     </div>
   )
 }
