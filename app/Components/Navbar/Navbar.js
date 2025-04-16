@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className="relative z-10 p-2 bg-transparent text-white flex justify-between items-center">
         {/*  logoName  */}
         <Link href={"/home"} className="flex items-center">
-          <span className="text-6xl font-navLogo">
+          <span className="text-6xl font-navLogo font-medium">
             <span className="text-purple-700">UX</span>Nest
           </span>
           </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
         >
           <div id="navMenu" className="flex justify-between">
             <a href="#" className="flex items-center">
-              <span className="text-6xl font-navLogo">
+              <span className="text-6xl font-navLogo font-medium">
                 <span className="text-purple-700">UX</span>Nest
               </span>
             </a>
@@ -77,7 +77,7 @@ const Navbar = () => {
 
           <div id="menu" className="mt-16">
           <Link href={"/home"}
-          className="font-normal text-white transition delay-2000 duration-300 hover:text-purple-200">Home</Link>
+          className="font-medium text-2xl m-3 p-8 transition delay-2000 duration-300 hover:text-gray-600">Home</Link>
             
             <div className="h-[1px] bg-gray-300 m-4"></div>
             <Link

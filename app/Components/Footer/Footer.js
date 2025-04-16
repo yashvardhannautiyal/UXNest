@@ -13,27 +13,27 @@ const Footer = () => {
           <div className="sm:text-2xl">
             <ul className="flex space-x-2 justify-center text-center">
               <li>
-                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-2 m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <FaFacebook />
                 </div>
               </li>
               <li>
-                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-2 m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <GrLinkedinOption />
                 </div>
               </li>
               <li>
-                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-2 m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <FaXTwitter />
                 </div>
               </li>
               <li>
-                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-2 m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <FaInstagram />
                 </div>
               </li>
               <li>
-                <div className="p-1 sm:mt-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
+                <div className="p-2 m-2 rounded-full hover:bg-white hover:text-black hover:cursor-pointer">
                   <FaGithub />
                 </div>
               </li>
@@ -46,8 +46,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-t-gray-400 pt-8 text-gray-300 mt-7">
-          <span className="flex justify-center items-center">
+        <div className="border-t border-t-gray-400 text-gray-300 mt-4">
+          <span className="flex justify-center items-center mt-4 mb-2">
             Copyright
             <FaRegCopyright className="pl-2 pr-2 text-3xl"/>
             <p>2024. All Rights Reserved.</p>

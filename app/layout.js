@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <SessionWrapper>
-      <body id="bg-gradient">        
+      <body id="bg-gradient" className = "mainFont">        
         <Navbar />
         {children}
         <Footer />
