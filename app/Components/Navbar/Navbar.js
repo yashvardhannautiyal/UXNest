@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import Link from "next/link";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 
@@ -9,7 +10,6 @@ const menu = () => {
 };
 
 const Navbar = () => {
-
   return (
     <>
       <nav className="relative z-10 p-2 bg-transparent text-white flex justify-between items-center">
@@ -18,37 +18,35 @@ const Navbar = () => {
           <span className="text-6xl font-navLogo font-medium">
             <span className="text-purple-700">UX</span>Nest
           </span>
-          </Link>
+        </Link>
 
         <div className="hidden lg:flex gap-12 font-medium p-4">
           {/* home  */}
-          <Link href={"/home"}
-          className="font-normal text-white transition delay-2000 duration-300 hover:text-purple-200">Home</Link>
-          
+          <Link
+            href={"/home"}
+            className="font-normal text-white hover:text-purple-200"
+          >
+            Home
+          </Link>
+
           {/* Log-in  */}
           <Link
             href={"/login"}
-            className="font-normal text-white transition delay-2000 duration-300 hover:text-purple-200"
+            className="font-normal text-white hover:text-purple-200"
             style={{ cursor: "pointer" }}
-            
           >
             Sign in
           </Link>
 
           {/* dark mode */}
-          {/* <a
-            href="#"
-            className="font-normal text-white transition delay-2000 duration-300 hover:text-purple-200"
-          >
-            Darkmode
-          </a> */}
+          {/* <button className=""> */}
+            <ThemeToggle />
+          {/* </button> */}
         </div>
 
         {/* menu : for screen smaller than medium */}
         {/*  open menu icon */}
-        <button className="lg:hidden" 
-        onClick={menu}
-         >
+        <button className="lg:hidden" onClick={menu}>
           <span>
             <IoMenu />
           </span>
@@ -66,9 +64,7 @@ const Navbar = () => {
             </a>
 
             {/* close icon */}
-            <button className="lg:hidden" 
-            onClick={menu}
-             >
+            <button className="lg:hidden" onClick={menu}>
               <span className="material-symbols-outlined font-bold">
                 <IoClose />
               </span>
@@ -76,21 +72,24 @@ const Navbar = () => {
           </div>
 
           <div id="menu" className="mt-16">
-          <Link href={"/home"}
-          className="font-medium text-2xl m-3 p-8 transition delay-2000 duration-300 hover:text-gray-600">Home</Link>
-            
+            <Link
+              href={"/home"}
+              className="font-medium text-2xl m-3 p-8 hover:text-gray-600"
+            >
+              Home
+            </Link>
+
             <div className="h-[1px] bg-gray-300 m-4"></div>
             <Link
               href={"/editor"}
-              className="font-medium text-2xl m-3 p-8 transition delay-2000 duration-300 hover:text-gray-600" 
+              className="font-medium text-2xl m-3 p-8 hover:text-gray-600"
             >
               Get started
             </Link>
             <div className="h-[1px] bg-gray-300 m-4"></div>
             <div className="p-3">
-              <button className="text-white bg-purple-700 rounded-md p-1 text-lg hover:bg-purple-500 font-medium w-full transition delay-2000 duration-300">
-                <Link href={"/login"}>
-                Sign-in </Link>
+              <button className="text-white bg-purple-700 rounded-md p-1 text-lg hover:bg-purple-500 font-medium w-full">
+                <Link href={"/login"}>Sign-in </Link>
               </button>
             </div>
           </div>
